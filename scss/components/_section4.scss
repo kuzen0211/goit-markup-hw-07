@@ -1,0 +1,43 @@
+/* Section 4 */
+.customer__list {
+  display: flex;
+  list-style: none;
+}
+
+.customer__item {
+  height: 92px;
+  width: 170px;
+
+  &:not(:last-child) {
+  margin-right: 30px;
+}
+}
+
+.customer__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 1px solid $colorIcon;
+  border-radius: 4px;
+  transition: border $transition;
+
+  &:hover,
+  &:focus {
+  border: 1px solid $colorAccent;
+}
+}
+
+.customer__icon {
+  width: 106px;
+  height: 60px;
+  fill: $colorIcon;
+  transition: fill $transition;
+
+  .customer__link:hover &,
+.customer__link:focus & {
+  fill: $colorAccent;
+}
+}

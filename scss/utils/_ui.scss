@@ -1,0 +1,68 @@
+/* Hero button */
+.button {
+  font-family: 'Roboto';
+  font-size: 16px;
+  line-height: 1.87;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 0px;
+  color: $colorPrimeryButton;
+  background-color: $bgColorButton;
+}
+
+.button--hero {
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px $boxShadowHero;
+}
+
+.button--send {
+  padding: 10px 52px;
+
+  color: #fff;
+  background-color: $colorAccent;
+}
+
+.button--subscription {
+  display: flex;
+  align-items: center;
+  padding: 10px 29px;
+}
+
+// Radio btn
+.radio-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.radio-btn__button {
+  padding: 6px 22px;
+  vertical-align: top;
+  transition: box-shadow $transition, color $transition, background-color $transition;
+
+  background-color: $bgColorBtnSecondary;
+
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 0px;
+
+  &:hover,
+  &:focus {
+  color: $colorPrimeryButton;
+  background-color: $bgColorButton;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+}
+
+.radio-btn__item:not(:last-child) {
+  margin-right: 8px;
+}
+

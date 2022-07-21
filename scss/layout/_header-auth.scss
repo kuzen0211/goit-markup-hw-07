@@ -1,0 +1,45 @@
+/* Header auth */
+
+.auth {
+  display: flex;
+  margin-left: auto;
+}
+
+.auth__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.auth__icon {
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  fill: $colorPrimeryText;
+  transition: fill $transition;
+
+  .auth__link:hover &,
+.auth__link:focus & {
+  fill: $colorAccent;
+}
+}
+
+.auth__link {
+   display: flex;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  
+
+  color: $colorPrimeryText;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: color $transition;
+
+  &:hover,
+  &:focus {
+  color: $colorAccent;
+}
+}
